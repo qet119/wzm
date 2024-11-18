@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "base": [
+        "../mylib/base"
+      ],
+      "ui": [
+        "../mylib/ui"
+      ],
+      "spfw-base": [
+        "../mylib/spfw-base"
+      ],
+      "skin": [
+        "../mylib/skin"
+      ]
+    },
+    "target": "ES2017"
+  },
+  "references": [
+    {
+      "path": "../mylib/base"
+    },
+    {
+      "path": "../mylib/ui"
+    },
+    {
+      "path": "../mylib/spfw-base"
+    },
+    {
+      "path": "../mylib/skin"
+    }
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "globals.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
